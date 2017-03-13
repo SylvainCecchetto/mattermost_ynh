@@ -17,7 +17,7 @@ archive_filename="mattermost-$version.tar.gz"
 arch="$(uname -m)"
 if [[ "$arch" != "x86_64" ]]; then
     echo "Mattermost requires an x86_64 machine, but this one is '${arch}'."
-    exit 1
+    #exit 1
 fi
 
 # Check for MySQL version (ugly, to be improved)
